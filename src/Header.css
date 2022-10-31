@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
+:root {
+    --backgorund-color: #2B394F;
+    --font-color: aliceblue;
+    --point-color: orange;
+}
+body {
+    margin :0;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #20204c;
+    padding: 8px 12px;
+}
+
+.navbar_menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar_menu li {
+    padding: 8px 12px;
+}
+
+.navbar_toogleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    top: 15px;
+    color: #d49456;
+}
+
+
+.navbar_menu li:hover {
+    background-color: #d49466;
+    border-radius: 4px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+    .Login_block {
+        text-align: center;
+    }
+
+    .navbar_menu {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .Login_block {
+        display: none;
+    }
+
+    .navbar_toogleBtn {
+        display: block;
+    }
+    .navbar_menu.active {
+        display: flex;
+    }
+}
