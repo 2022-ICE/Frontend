@@ -32,7 +32,7 @@ function signUpCheck(){
       check = false
     }
     else{
-      document.getElementById("nameError").innerHTML=""
+      document.getElementById("idError").innerHTML=""
     }
   
     // 이름확인
