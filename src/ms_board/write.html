@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>자유게시판 글 작성</title>
+    <link rel="stylesheet" href="css.css">
+    <script src="write.js"></script>
+</head>
+<div data-include1="header" id="header"></div><!--헤더 인클루드-->
+<body>
+    
+    <div class="board_wrap">
+        <div class="board_title">
+            <strong>자유게시판 글 작성</strong>
+            <p>글 작성하는 곳입니당,</p>
+        </div>
+        <div class="board_write_wrap">
+            <div class="board_write">
+                <div class="title">
+                    <dl>
+                        <dt>제목</dt>
+                        <dd><input id="title" type="text" placeholder="제목 입력"></dd>
+                        <div id="titleError" class="error"></div>
+                    </dl>
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>글쓴이</dt>
+                        <dd><input id="name" type="text" placeholder="글쓴이 입력"></dd>
+                        <div id="nameError" class="error"></div>
+                    </dl>
+                </div>
+                <div class="cont">
+                    <textarea id="content" placeholder="내용 입력"></textarea>    
+                </div>
+                <div id="contentError" class="error"></div>
+            </div>
+            <div class="bt_wrap">
+                <button id="writeButton" onclick="signUpCheck()">글등록</button>
+                <a href="list.html">취소</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript">   
+    $(document).ready( function() {
+    $("#header").load("header.html");  
+
+    });
+  </script>
+</html>
