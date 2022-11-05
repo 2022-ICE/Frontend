@@ -19,7 +19,7 @@
 .header .title h1 {
     font-size: 40px;
     color: #444;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.1em;
     margin-bottom: 0;
 }
 
@@ -29,19 +29,26 @@
     color: #444;
 }
 
-.header .title button {
-    background: black;
-    color: white;
-    border: 2px solid white;
-    border-radius: 5px;
-    padding: 10px 30px;
-    font-size: 14px;
-    transition: .5s ease;
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.header .title button:hover {
-    transition: .5s ease;
-    border: 2px solid black;
-    background: transparent;
-    color: black;
+.intro .icons {
+    flex: 1;
+    text-align: center;
+    margin: 150px 40px;
+}
+
+.intro .icons i {
+    font-size: 70px;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.intro .icons h1 {
+    letter-spacing: 0.2em;
 }
