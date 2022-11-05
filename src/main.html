@@ -3,15 +3,57 @@
 <head>    
   <meta charset="UTF-8">
   <title>정보통신학과 홈페이지</title>
-
 </head>
+<div data-include1="header" id="header"></div><!--헤더 인클루드-->
 <body>
+  <div id="header"></div>
+  <div id="container">
+    <section>
+      <h4>공지사항</h4>
+      <ul class="notice">
+        <li>
+          
+        </li>
+        
+      </ul>
+    </section>
+    <section>
+      <h4>자유게시판</h4>
+      <ul class="board">
+        <li>
+          <!--글제목 보이고 그거 누르면 딱 거기 글로 가는거 알지알지 5개정도 보이면 좋을수도-->
 
-      <!--  <h1>학교웹사이트</h1>
-      <h1>게시판 최신글</h1>
-      <h1>셔틀시간표</h1>
-      <h1>학사일정</h1>
-      <h1>공지사항</h1> -->
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h4>학사일정</h4>
+      <ul class="date">
+        <li>
+          <!--학교 학사일정을 가지고 와야하나-->
+        </li>
+      </ul>
+    </section>
+    <section>
+      <h4>수업,학점 관련사항</h4>
+      <div>
+        <ul class="link-list">
+          <li><a href="https://www.ptu.ac.kr/www/496/subview.do">수업시간, 수업강의실표기</a></li>
+          <li><a href="https://www.ptu.ac.kr/www/504/subview.do">졸업학점</a></li>
+          <li><a href="#">셔틀시간표</a></li>
+        </ul>
+      </div>
+    </section>
+  </div>
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript">   
+    $(document).ready( function() {
+    $("#header").load("header.html");  
+
+    });
+  </script>
+
+
 
 </body>
 

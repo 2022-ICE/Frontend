@@ -2,9 +2,11 @@
 <html>
 <head>
     <link rel="stylesheet" href="professor.css">
-</head>
-<body>
     
+</head>
+<div data-include1="header" id="header"></div><!--헤더 인클루드-->
+<body>
+    <div id="header"></div>
     <div class="profWrap">
     
         <div class="photoWrap">
@@ -40,4 +42,11 @@
         </div>
     </div>
 </body>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript">   
+    $(document).ready( function() {
+    $("#header").load("header.html");  
+
+    });
+  </script>
 </html>

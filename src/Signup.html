@@ -5,9 +5,10 @@
     <title>회원가입 페이지</title>
     <link href="Signup.css" rel="stylesheet" />
     <script src="Signup.js"></script>
-
+    <div data-include1="header" id="header"></div><!--헤더 인클루드-->
 </head>
-<body>     
+<div id="header"></div> 
+<body>       
     <div class="wrapper">
         <div class="title"><h1 style="font-size: 21px;">회원가입</h1></div>
         <div class="name">
@@ -64,5 +65,12 @@
     </div>
 
 </body>
+<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript">   
+    $(document).ready( function() {
+    $("#header").load("header.html");  
+
+    });
+  </script>
 
 </html> 
