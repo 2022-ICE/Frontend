@@ -1,51 +1,41 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <title>이진 교수님</title>
-        <link rel="stylesheet" href="professor.css">
-    </head>
-    <body>
-       
-        <div class="frame">
-            
-    
-
-            <img id="profile-picture" src="../png/ljpf.png">
-    
-    
-            
-
-                <div class="introduction">
-                    <h2>이진 교수님</h2>
-                    <p>전공분야 : 시스템 반도체 설계, 무선통신 MAC&PHY, 임베디드 시스템</p>
-                    <p>연구분야 : 무선통신 디지털 설계, IoT 하드웨어 및 애플리케이션 개발</p>
-                    <p>최종학력 : 공학박사</p>
-                    <p>연구실 : 이공관 407호</p>
-                    <p>email : mygenie79@ptu.ac.kr</p>
-                    <br>
-                    <br>
-                    <br>
-                    <p>-</p>
-                    <p> 한국과학기술원(KAIST) 전기및 전자공학과를 졸업하고, 동대학원에서 무선 통신 System on Chip(SoC) 개발 분야에 대한 연구로 석,박사 학위를 취득하였다.
-                    <br> 2009년부터 2017년까지 삼성전자에서 IoT/무선통신/Embedded system에 관한 다양한 연구 개발을 수행하였다.
-                    <br> 3종의 IEEE 802.11 WLAN 칩 개발 과제에서 주도적인 역할을 하였으며, 세계 최초로 스마트 TV용 Wake-on-WLAN 기능을 개발하여 양산에 성공하였다. MHL 국제 표준 기술 멤버로 superMHL 커넥터/케이블 표준 개발에 참여하였고,
-                    <br> 삼성전자 프리미엄 TV용 광케이블 검증 임베디드 시스템을 개발하여 세계 최초 TV용 광케이블 양산에 성공하였다. 2018년 평택대학교 정보통신학과에 임용되었으며, 국책 연구소 및 회사와 최신 무선통신 기술의 디지털 하드웨어 구현에 관련된 프로젝트를 지속적으로 수행하고 있다.
-                    <br> 연구관심 분야는 IoT용 임베디드 시스템 설계 및 저전력 무선 통신의 프로토콜/알고리즘 개발 등이다.
-                </div>
-            </div>
-    
-        
-    
-    
-
-    
-    
-    
-    
-    
+<head>
+    <meta charset="UTF-8">
+    <title>이진 교수님</title>
+    <link rel="stylesheet" href="professor.css">
+</head>
+<body>
+    <div id="Header"></div>
+    <script>
+        async function fetchHtmlAsText(url) {
+            return await (await fetch(url)).text();
+        }
+        async function importPage(target) {
+            document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(target + '.html');
+        }
+        importPage('Header')
+    </script>
+    <div class="frame">
+        <img id="profile-picture" src="../png/ljpf.png">
+        <div class="introduction">
+            <h2>이진 교수님</h2>
+            <p>전공분야 : 시스템 반도체 설계, 무선통신 MAC&PHY, 임베디드 시스템</p>
+            <p>연구분야 : 무선통신 디지털 설계, IoT 하드웨어 및 애플리케이션 개발</p>
+            <p>최종학력 : 공학박사</p>
+            <p>연구실 : 이공관 407호</p>
+            <p>email : mygenie79@ptu.ac.kr</p>
+            <br>
+            <br>
+            <br>
+            <p>-</p>
+            <p> 한국과학기술원(KAIST) 전기및 전자공학과를 졸업하고, 동대학원에서 무선 통신 System on Chip(SoC) 개발 분야에 대한 연구로 석,박사 학위를 취득하였다.
+            <br> 2009년부터 2017년까지 삼성전자에서 IoT/무선통신/Embedded system에 관한 다양한 연구 개발을 수행하였다.
+            <br> 3종의 IEEE 802.11 WLAN 칩 개발 과제에서 주도적인 역할을 하였으며, 세계 최초로 스마트 TV용 Wake-on-WLAN 기능을 개발하여 양산에 성공하였다. MHL 국제 표준 기술 멤버로 superMHL 커넥터/케이블 표준 개발에 참여하였고,
+            <br> 삼성전자 프리미엄 TV용 광케이블 검증 임베디드 시스템을 개발하여 세계 최초 TV용 광케이블 양산에 성공하였다. 2018년 평택대학교 정보통신학과에 임용되었으며, 국책 연구소 및 회사와 최신 무선통신 기술의 디지털 하드웨어 구현에 관련된 프로젝트를 지속적으로 수행하고 있다.
+            <br> 연구관심 분야는 IoT용 임베디드 시스템 설계 및 저전력 무선 통신의 프로토콜/알고리즘 개발 등이다.
         </div>
+    </div>  
+</body>
     
-    </body>
-    
-    </html>
+</html>

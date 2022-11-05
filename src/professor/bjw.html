@@ -1,51 +1,41 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8">
-        <title>변진욱 교수님</title>
-        <link rel="stylesheet" href="professor.css">
-    </head>
-    <body>
-       
-        <div class="frame">
-            
-    
+<head>
+    <meta charset="UTF-8">
+    <title>변진욱 교수님</title>
+    <link rel="stylesheet" href="professor.css">
+</head>
+<body>
+    <div id="Header"></div>
+    <script>
+        async function fetchHtmlAsText(url) {
+            return await (await fetch(url)).text();
+        }
 
-            <img id="profile-picture" src="../png/bjwpf.png">
-    
-    
-            
-
-                <div class="introduction">
-                    <h2>변진욱 교수님/h2>
-                    <p>전공분야 : 네트워크 보안 및 정보보호</p>
-                    <p>연구분야 : 네트워크 보안, 정보보호 프로토콜, 암호학</p>
-                    <p>최종학력 : 공학박사</p>
-                    <p>연구실 : 이공관 418호</p>
-                    <p>사무실 전화번호 : 031-659-8286</p>
-                    <p>email : jwbyun@ptu.ac.kr</p>
-                    <br>
-                    <br>
-                    <br>
-                    <p>-</p>
-                    <p> 고려대학교 전산학과를 졸업하고 정보보호대학원에서 정보보호 전공으로 석사, 박사를 취득하였다.
-                    <br> 2006년 박사 취득 후 연구재단 지원으로 런던대학 RHUL ISG 에서 박사 후 연수를 수행하였으며 2008년에 평택대학교에 임용되었다.
-                    <br> 임용 후 네트워크 보안, 정보보호 이론 및 응용 교육을 통해 수요자 중심의 경쟁력 있는 4차산업 정보통신 인력 양성에 최선을 다하고 있다. 
-                    <br> 또한 4차 산업시대의 핵심 보안 기술인 물리복제방지기술 (PUF), Internet of drones (IoD) 보안, 블록체인 보안, 센서네트워크 보안 분야에서 정보보호 프로토콜 및 관련 암호 이론 개발에 집중하고 있다.
-                </div>
-            </div>
-    
-        
-    
-    
-
-    
-    
-    
-    
-    
+        async function importPage(target) {
+            document.querySelector('#' + target).innerHTML = await fetchHtmlAsText(target + '.html');
+        }
+        importPage('Header')
+    </script>
+    <div class="frame">
+        <img id="profile-picture" src="../png/bjwpf.png">
+        <div class="introduction">
+            <h2>변진욱 교수님/h2>
+            <p>전공분야 : 네트워크 보안 및 정보보호</p>
+            <p>연구분야 : 네트워크 보안, 정보보호 프로토콜, 암호학</p>
+            <p>최종학력 : 공학박사</p>
+            <p>연구실 : 이공관 418호</p>
+            <p>사무실 전화번호 : 031-659-8286</p>
+            <p>email : jwbyun@ptu.ac.kr</p>
+            <br>
+            <br>
+            <br>
+            <p>-</p>
+            <p> 고려대학교 전산학과를 졸업하고 정보보호대학원에서 정보보호 전공으로 석사, 박사를 취득하였다.
+            <br> 2006년 박사 취득 후 연구재단 지원으로 런던대학 RHUL ISG 에서 박사 후 연수를 수행하였으며 2008년에 평택대학교에 임용되었다.
+            <br> 임용 후 네트워크 보안, 정보보호 이론 및 응용 교육을 통해 수요자 중심의 경쟁력 있는 4차산업 정보통신 인력 양성에 최선을 다하고 있다. 
+            <br> 또한 4차 산업시대의 핵심 보안 기술인 물리복제방지기술 (PUF), Internet of drones (IoD) 보안, 블록체인 보안, 센서네트워크 보안 분야에서 정보보호 프로토콜 및 관련 암호 이론 개발에 집중하고 있다.
         </div>
-    
-    </body>
-    
-    </html>
+    </div>
+</body>
+</html>
