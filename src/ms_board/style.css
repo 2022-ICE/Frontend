@@ -261,9 +261,6 @@ a {
     width: 100px;
 }
 
-/*.board_write .title dd {
-    width: calc(100% - 100px);
-} */
 
 .board_write .title input[type="text"],
 .board_write .info input[type="text"],
