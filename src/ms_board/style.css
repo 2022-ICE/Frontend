@@ -1,16 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    font-size: 10px;
-}
-
-ul, li {
-    list-style: none;
-}
-
 a {
     text-decoration: none;
     color: inherit;
@@ -24,14 +11,17 @@ a {
 .board_title {
     margin-bottom: 30px;
 }
+.board_title > p > i {
+    color: red
+}
 
 .board_title strong {
-    font-size: 3rem;
+    font-size: 32px;
 }
 
 .board_title p {
     margin-top: 5px;
-    font-size: 1.4rem;
+    font-size: 15px;
 }
 
 .bt_wrap {
@@ -47,7 +37,17 @@ a {
     padding: 10px;
     border: 1px solid #000;
     border-radius: 2px;
-    font-size: 1.4rem;
+    font-size: 1rem;
+}
+
+.bt_wrap .cancel {
+    display: inline-block;
+    min-width: 80px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    font-size: 1rem;
 }
 
 .bt_wrap button {
@@ -63,7 +63,6 @@ a {
     color: #fff;
     cursor: pointer;
 }
-
 
 .bt_wrap a:first-child {
     margin-left: 0;
@@ -97,7 +96,7 @@ a {
     display: inline-block;
     padding: 15px 0;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 15px;
 }
 
 .board_list > div.top > div {
@@ -148,23 +147,19 @@ a {
 
 .board_page a.bt {
     padding-top: 10px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     letter-spacing: -1px;
 }
 
 .board_page a.num {
     padding-top: 9px;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
 
 .board_page a.num.on {
     border-color: #000;
     background: #185200;
     color: #fff;
-}
-
-.board_page a:first-child {
-    border-left: 1px solid #ddd;
 }
 
 .board_view {
@@ -174,8 +169,8 @@ a {
 
 .board_view .title {
     padding: 20px 15px;
-    border-bottom: 1px dashed #ddd;
-    font-size: 2rem;
+    border-bottom: 2px dashed #ddd;
+    font-size: 17px;
 }
 
 .board_view .info {
@@ -212,10 +207,8 @@ a {
 .board_view .info dl dt,
 .board_view .info dl dd {
     display: inline-block;
-    font-size: 1.4rem;
+    font-size: 1rem;
 }
-
-
 
 .board_view .info dl dd {
     margin-left: 10px;
@@ -226,7 +219,7 @@ a {
     padding: 15px;
     border-bottom: 1px solid #000;
     line-height: 160%;
-    font-size: 1.4rem;
+    font-size: 15px;
 }
 
 .board_write {
@@ -260,7 +253,7 @@ a {
 .board_write .info dd {
     display: inline-block;
     vertical-align: middle;
-    font-size: 1.4rem;
+    font-size: 17px;
 }
 
 .board_write .title dt,
@@ -268,9 +261,9 @@ a {
     width: 100px;
 }
 
-.board_write .title dd {
+/*.board_write .title dd {
     width: calc(100% - 100px);
-}
+} */
 
 .board_write .title input[type="text"],
 .board_write .info input[type="text"],
@@ -280,7 +273,7 @@ a {
 }
 
 .board_write .title input[type="text"] {
-    width: 80%;
+    width: 435%;
 }
 
 .board_write .cont {
@@ -298,7 +291,7 @@ a {
 }
 
 .error{
-    font-size: 3px;
+    font-size: 12px;
     height: 20px;
     color:red;
     font-weight: 700;
