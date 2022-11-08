@@ -12,21 +12,11 @@
     text-align: center;
 }
 
-.header .title img {
-    width: 100px;
-}
-
 .header .title h1 {
     font-size: 40px;
     color: #444;
     letter-spacing: 0.1em;
     margin-bottom: 0;
-}
-
-.header .title p {
-    margin-top: 0;
-    margin-bottom: 30px;
-    color: #444;
 }
 
 .intro {
